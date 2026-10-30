@@ -1,4 +1,4 @@
-name: Student Workflow
+name: Zhalgas Workflow
 
 on:
   push:
@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Student information
-        run: echo "My name is Student"
+        run: echo "My name is Zhalgas"
 
       - name: Project information
         run: echo "This is my first workflow"
