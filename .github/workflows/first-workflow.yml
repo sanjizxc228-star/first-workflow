@@ -1,0 +1,29 @@
+name: Student Workflow
+
+on:
+  push:
+
+jobs:
+  information:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Student information
+        run: echo "My name is Student"
+
+      - name: Project information
+        run: echo "This is my first workflow"
+
+      - name: Date
+        run: date
+
+      - name: Operating system information
+        run: |
+          echo "Operating System Information:"
+          uname -a
+          cat /etc/os-release
+
+      - name: Repository files
+        run: |
+          echo "Files in the repository:"
+          ls -la
